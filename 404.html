@@ -1,32 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>myPortfolio</title>
-
-    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css" />
-    <link rel="stylesheet" href="css/app.css" />
-    <link rel="icon" type="image/png" href="favicon.png" />
-    <link href="myPortfolio.styles.css" rel="stylesheet" />
+    <script type="text/javascript">
+        // This script redirects any unknown route back to index.html,
+        // preserving query strings and hash fragments.
+        var redirectTo = '/myPortfolio/index.html' + window.location.search + window.location.hash;
+        window.location.replace(redirectTo);
+    </script>
+    <title>Redirecting...</title>
 </head>
-
 <body>
-    <div id="app">
-        <svg class="loading-progress">
-            <circle r="40%" cx="50%" cy="50%" />
-            <circle r="40%" cx="50%" cy="50%" />
-        </svg>
-        <div class="loading-progress-text"></div>
-    </div>
-
-    <div id="blazor-error-ui">
-        An unhandled error has occurred.
-        <a href="" class="reload">Reload</a>
-        <a class="dismiss">🗙</a>
-    </div>
-    <script src="_framework/blazor.webassembly.js"></script>
+    <p>If you are not redirected automatically, <a href="/myPortfolio/index.html">click here</a>.</p>
 </body>
-
 </html>
