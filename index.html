@@ -31,13 +31,4 @@
 </body>
 <script src="_framework/blazor.webassembly.js"></script>
 <script src="_content/MudBlazor/MudBlazor.min.js"></script>
-<script>
-    (function () {
-        var params = new URLSearchParams(window.location.search);
-        var redirectPath = params.get("redirect");
-        if (redirectPath) {
-            window.history.replaceState({}, "", redirectPath);
-        }
-    })();
-</script>
 </html>
