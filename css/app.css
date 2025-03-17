@@ -1,5 +1,5 @@
 html, body {
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: 'Quicksand','Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 h1:focus {
@@ -100,4 +100,112 @@ a, .btn-link {
 
 code {
     color: #c02d76;
+}
+/* Custom class */
+.my-custom-class {
+    font-size: 18px;
+    color: #333;
+    line-height: 1.6;
+    text-align: justify;
+    margin-bottom: 16px;
+}
+
+.indented {
+    margin-left: 20px; /* Adjust value as needed */
+    list-style-type: square;
+  }
+
+.bold-word {
+    font-weight: bold;
+  }
+/* Appbar */
+
+.my-appbar-gradient {
+    background: linear-gradient(45deg,
+    #ff6600, #ffcc00) !important;
+    color: white !important;
+}
+
+.mud-theme-default .my-appbar-gradient {
+    background: linear-gradient(45deg,
+    #ff6600, #ffcc00) !important;
+}
+
+.mud-theme-dark .my-appbar-gradient {
+    background: linear-gradient(45deg,
+    #222831, #393E46) !important;
+}
+
+
+/* Animation */
+
+@keyframes fadeInUp {
+    from {
+        transform: translate3d(0,40px,0)
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes fadeInUp {
+    from {
+        transform: translate3d(0,40px,0)
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
+}
+
+@keyframes fadeInLeft {
+    from {
+        transform: translate3d(40px,0,0)
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes fadeInLeft {
+    from {
+        transform: translate3d(0,40px,0)
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
+}
+
+.animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-fill-mode: both
+}
+
+.animatedFadeInUp {
+    opacity: 0
+}
+
+.fadeInUp {
+    opacity: 0;
+    animation-name: fadeInUp;
+    -webkit-animation-name: fadeInUp;
+}
+
+.animatedFadeInLeft {
+    opacity: 0
+}
+
+.fadeInLeft {
+    opacity: 0;
+    animation-name: fadeInLeft;
+    -webkit-animation-name: fadeInLeft;
 }
