@@ -118,6 +118,19 @@ code {
 .bold-word {
     font-weight: bold;
   }
+
+/* Base font-size for larger screens */
+.mud-typography.my-text {
+    font-size: 1.0rem;
+  }
+  
+  /* For extra-small screens (xs), typically less than 600px */
+  @media (max-width: 600px) {
+    .mud-typography.my-text {
+      font-size: 0.75rem; /* Adjust font size for xs screens */
+    }
+  }
+  
 /* Appbar */
 
 .my-appbar-gradient {
