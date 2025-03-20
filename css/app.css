@@ -126,6 +126,9 @@ code {
   
   /* For extra-small screens (xs), typically less than 600px */
   @media (max-width: 600px) {
+    .mud-typography.resize95 {
+        font-size: 0.95rem; /* Adjust font size for xs screens */
+      }
     .mud-typography.resize85 {
         font-size: 0.85rem; /* Adjust font size for xs screens */
       }
